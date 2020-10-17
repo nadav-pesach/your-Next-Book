@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Your Next Book</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- credit: Scott Jehl -->
+<!-- https://www.filamentgroup.com/lab/html-includes/ -->
+<iframe src="nav.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+<h1>Find your next book</h1>
+<div id="search">
+    <form id="run-search">
+        <label for="mybooks" class="hidden">Your current book:</label><br>
+        <input id="search-box" autofocus id="mybooks" name="mybooks" placeholder="My current book" type="text">
+        <button id="search-button" type="submit"><a href="search-result.html">Search</a></button>
+    </form>
+</div>
+
+</body>
+</html>
